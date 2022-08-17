@@ -1,0 +1,60 @@
+ 
+<html>
+    <head>
+      <title>Image recognition</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+     <link rel="stylesheet" href="style.css">
+    
+    </head>
+  
+    <body>
+    <div class="container">
+      
+      <center>
+        <h3 class = "btn btn-default heading"> My Own Face Id App</h3>
+        <br>
+        <br>
+        <p> Welcome to the Emotion Recogniser! In case you don't know how to use this app here are the instructions: Pose your face near so the the webcam can view it. Act out one of the emotions the model is trained to recognise. When you are ready click Capture Image. After that, simply press check and the computer will run the emotion throught the system! Enjoy!</p>
+  
+        <br><br>
+  
+        <p style="font-size: 22px;">This model is trained to recognise the following emotions </p>
+        <b class = "name_of_object"> Bored<hr> Silly <hr> Happy <hr> Sad<hr> Serious <hr> </b>
+        <br>
+        <p style="font-size: 22px;">Are you ready to make some magic happen? Then use the webcam already!</p>
+        
+  
+  
+        <label>Webcam View - </label>
+        <div id = "camera">
+  
+        </div>
+  
+        <br><br>
+        <div id = "result">
+  
+        </div>
+        <button onclick = "takeSnapshot();" class = "btn btn-default"> Capture Image </button>
+  
+        <br><br>
+        <button onclick = "check()" class = "btn btn-default"> Identify Image </button>
+  
+        <br><br>
+  
+        <br><br>
+  
+        <p style="font-size: 22px;">Emotion :  <span id = "result_object_name"></span> </p>
+        <p style="font-size: 22px;">Accuracy :  <span id = "result_object_accuracy"></span>  </p>
+      </center>
+  
+    </div>
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
